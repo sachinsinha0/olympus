@@ -6,7 +6,7 @@ import { getInterviewData } from '../data/interviewData';
 
 export default function UserAttemptsPage() {
   const navigate = useNavigate();
-  const { userId, attemptId } = useParams<{ userId: string; attemptId: string }>();
+  const { attemptId } = useParams<{ userId: string; attemptId: string }>();
   const [activeTab, setActiveTab] = useState(0);
   const [expandedQuestion, setExpandedQuestion] = useState(1); // First question expanded by default
   const [activeRecordingTab, setActiveRecordingTab] = useState(0); // 0 for Video, 1 for Anomalies
